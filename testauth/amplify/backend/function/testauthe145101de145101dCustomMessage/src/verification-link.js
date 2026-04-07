@@ -31,9 +31,16 @@ exports.handler = async (event) => {
         clientId,
       }),
     ).toString('base64');
-    // eslint-disable-next-line spellcheck/spell-checker
-    const bucketUrl = `http://${resourcePrefix}verificationbucket-${process.env.ENV}.s3-website${separator}${region}.amazonaws.com`;
-    const url = `${bucketUrl}/?data=${payload}&code=${codeParameter}`;
+
+    // Use VERIFYURL env var if set, otherwise fall back to S3 bucket website URL
+    let verifyBaseUrl;
+    if (process.env.VERIFYURL) {
+      verifyBaseUrl = process.env.VERIFYURL;
+    } else {
+      // eslint-disable-next-line spellcheck/spell-checker
+      verifyBaseUrl = `http://${resourcePrefix}verificationbucket-${process.env.ENV}.s3-website${separator}${region}.amazonaws.com`;
+    }
+    const url = `${verifyBaseUrl}/?data=${payload}&code=${codeParameter}`;
     const message = `${process.env.EMAILMESSAGE}. \n ${url}`;
     event.response.smsMessage = message;
     event.response.emailSubject = process.env.EMAILSUBJECT;

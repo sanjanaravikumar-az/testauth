@@ -14,6 +14,10 @@
       "Type": "String",
       "Default": ""
     },
+    "VERIFYURL": {
+      "Type": "String",
+      "Default": ""
+    },
     "modules": {
       "Type": "String",
       "Default": "",
@@ -112,6 +116,9 @@
             },
             "RESOURCENAME": {
               "Ref": "resourceName"
+            },
+            "VERIFYURL": {
+              "Ref": "VERIFYURL"
             }
           }
         },

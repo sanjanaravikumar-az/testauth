@@ -115,6 +115,14 @@
     }
   },
   "parameters": {
+    "AMPLIFY_function_testauthe145101de145101dCreateAuthChallenge_CHALLENGEANSWER": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCreateAuthChallenge"
+        }
+      ]
+    },
     "AMPLIFY_function_testauthe145101de145101dCreateAuthChallenge_deploymentBucketName": {
       "usedBy": [
         {
@@ -148,6 +156,14 @@
       ]
     },
     "AMPLIFY_function_testauthe145101de145101dCustomMessage_REDIRECTURL": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dCustomMessage_VERIFYURL": {
       "usedBy": [
         {
           "category": "function",

@@ -18,6 +18,7 @@
       },
       "function": {
         "testauthe145101de145101dCreateAuthChallenge": {
+          "CHALLENGEANSWER": "brownie",
           "deploymentBucketName": "amplify-testauth-main-b6a66-deployment",
           "s3Key": "amplify-builds/testauthe145101de145101dCreateAuthChallenge-54576569304738675052-build.zip"
         },
@@ -25,8 +26,9 @@
           "REDIRECTURL": "www.google.com",
           "EMAILSUBJECT": "custom account confirmation email",
           "EMAILMESSAGE": "follow this link for confirmation code",
+          "VERIFYURL": "http://localhost:5174/verify",
           "deploymentBucketName": "amplify-testauth-main-b6a66-deployment",
-          "s3Key": "amplify-builds/testauthe145101de145101dCustomMessage-763173596d735734662f-build.zip"
+          "s3Key": "amplify-builds/testauthe145101de145101dCustomMessage-4676684376702f6d7078-build.zip"
         },
         "testauthe145101de145101dDefineAuthChallenge": {
           "deploymentBucketName": "amplify-testauth-main-b6a66-deployment",
@@ -34,11 +36,11 @@
         },
         "testauthe145101de145101dPostAuthentication": {
           "deploymentBucketName": "amplify-testauth-main-b6a66-deployment",
-          "s3Key": "amplify-builds/testauthe145101de145101dPostAuthentication-387466324776597a6932-build.zip"
+          "s3Key": "amplify-builds/testauthe145101de145101dPostAuthentication-637773787044506b726e-build.zip"
         },
         "testauthe145101de145101dPreAuthentication": {
           "deploymentBucketName": "amplify-testauth-main-b6a66-deployment",
-          "s3Key": "amplify-builds/testauthe145101de145101dPreAuthentication-4b3256506a4d50583236-build.zip"
+          "s3Key": "amplify-builds/testauthe145101de145101dPreAuthentication-7954617133386636304c-build.zip"
         },
         "testauthe145101de145101dVerifyAuthChallengeResponse": {
           "deploymentBucketName": "amplify-testauth-main-b6a66-deployment",
