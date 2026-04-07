@@ -1,0 +1,239 @@
+{
+  "auth": {
+    "testauthe145101de145101d": {
+      "customAuth": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCreateAuthChallenge",
+          "triggerProvider": "Cognito"
+        },
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCustomMessage",
+          "triggerProvider": "Cognito"
+        },
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "testauthe145101de145101dDefineAuthChallenge",
+          "triggerProvider": "Cognito"
+        },
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "testauthe145101de145101dPostAuthentication",
+          "triggerProvider": "Cognito"
+        },
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "testauthe145101de145101dPreAuthentication",
+          "triggerProvider": "Cognito"
+        },
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "testauthe145101de145101dVerifyAuthChallengeResponse",
+          "triggerProvider": "Cognito"
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "testauthe145101de145101dCreateAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "testauthe145101de145101dCustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "testauthe145101de145101dDefineAuthChallenge": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "testauthe145101de145101dPostAuthentication": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "testauthe145101de145101dPreAuthentication": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "testauthe145101de145101dVerifyAuthChallengeResponse": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_testauthe145101de145101dCreateAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dCreateAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCreateAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dCustomMessage_EMAILMESSAGE": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dCustomMessage_EMAILSUBJECT": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dCustomMessage_REDIRECTURL": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dCustomMessage_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dCustomMessage_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dCustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dDefineAuthChallenge_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dDefineAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dDefineAuthChallenge_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dDefineAuthChallenge"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dPostAuthentication_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dPostAuthentication"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dPostAuthentication_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dPostAuthentication"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dPreAuthentication_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dPreAuthentication"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dPreAuthentication_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dPreAuthentication"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dVerifyAuthChallengeResponse_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dVerifyAuthChallengeResponse"
+        }
+      ]
+    },
+    "AMPLIFY_function_testauthe145101de145101dVerifyAuthChallengeResponse_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "testauthe145101de145101dVerifyAuthChallengeResponse"
+        }
+      ]
+    }
+  }
+}
